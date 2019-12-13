@@ -21,26 +21,70 @@
         
     </div>
     <div class="row">
-        <div class="col-4" id="smallPizza">
-                <img  src="images/Small pizza.jpg" width="100%" class="image-fluid imagehover">
+        <div class="col-4" >
+                <div id="smallPizza">
+                    <img  src="images/Small pizza.jpg" width="100%" class="image-fluid imagehover">
                 <div class="overlay">
                     CLICK HERE
                 </div>
-                <div>
+            </div>
+            <form action="/action_page.php" id="options">
+                <p>Please select your crust of pizza!!</p>
+                  <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
+                  <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
+                  <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>  
+                
+                <p>Please select the toppings on pizza!! </p>
+                  <input type="checkbox" name="toppings" value="30">Beef...Ksh<br>
+                  <input type="checkbox" name="toppings" value="60">Bacon<br>
+                  <input type="checkbox" name="toppings" value="100">Pineapple<br>  
+                
+                  <input type="submit" value="Submit">
+                </form>
+        </div>
+        
+        <div class="col-4" >
+            <div id="mediumPizza">
+                <img  src="images/Medium pizza.jpg" width="100%" class="image-fluid imagehover">
+            <div class="overlay">
+                    CLICK HERE
+                </div>
+                <form action="/action_page.php" id="options">
+                    <p>Please select your crust of pizza!!</p>
+                      <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
+                      <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
+                      <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>  
                     
-                </div>
+                    <p>Please select the toppings on pizza!! </p>
+                      <input type="checkbox" name="toppings" value="30">Beef...Ksh<br>
+                      <input type="checkbox" name="toppings" value="60">Bacon<br>
+                      <input type="checkbox" name="toppings" value="100">Pineapple<br>  
+                    
+                      <input type="submit" value="Submit">
+                    </form>
+            </div>
         </div>
-        <div class="col-4" id="mediumPizza">
-            <img  src="images/Medium pizza.jpg" width="100%" class="image-fluid imagehover">
+        <div class="col-4">
+            <div id="largePizza">
+                <img  src="images/Large pizza.jpg" width="100%" class="image-fluid imagehover">
             <div class="overlay">
                     CLICK HERE
                 </div>
-        </div>
-        <div class="col-4" id="largePizza">
-            <img  src="images/Large pizza.jpg" width="100%" class="image-fluid imagehover">
-            <div class="overlay">
-                    CLICK HERE
-                </div>
+            </div>
+            <form action="/action_page.php" id="options">
+                <p>Please select your crust of pizza!!</p>
+                  <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
+                  <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
+                  <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>  
+                
+                <p>Please select the toppings on pizza!! </p>
+                  <input type="checkbox" name="toppings" value="30">Beef...Ksh<br>
+                  <input type="checkbox" name="toppings" value="60">Bacon<br>
+                  <input type="checkbox" name="toppings" value="100">Pineapple<br>
+                <p>Please input number of Pizzas</p>  
+                
+                  <input type="submit" value="Submit">
+                </form>
         </div>
     </div>
     <div id="footer">

@@ -48,7 +48,7 @@ h2 {
 }
 .overlay{
     position: absolute;
-    top: 50%;
+    top: 100px;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -63,5 +63,11 @@ h2 {
 img:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
+}
+#options{
+    text-align: left;
+    margin: 20px;
+    padding-left: 50px;
+    font-family: 'Pacifico', cursive;
 }
 
