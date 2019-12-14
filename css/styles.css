@@ -64,10 +64,28 @@ img:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
-#options{
+#optionsSmall{
     text-align: left;
     margin: 20px;
     padding-left: 50px;
     font-family: 'Pacifico', cursive;
+    display: none;
+    background-color: cornsilk;
+}
+#optionsMedium{
+    text-align: left;
+    margin: 20px;
+    padding-left: 50px;
+    font-family: 'Pacifico', cursive;
+    display: none;
+    background-color: cornsilk;
+}
+#optionsLarge{
+    text-align: left;
+    margin: 20px;
+    padding-left: 50px;
+    font-family: 'Pacifico', cursive;
+    display: none;
+    background-color: cornsilk;
 }
 

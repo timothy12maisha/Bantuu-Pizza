@@ -1,114 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
-    <title>BANTUU PIZZA</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="./jss/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <title>BANTUU PIZZA</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./jss/scripts.js"></script>
 </head>
+
 <body>
-    <div id="header" class="container-fluid text-center">
-            <img class="logo" src="images/bantuu logo.png" width="200px" height="200px">
-            <h1>Bantuu Pizza</h1>
-            <h2>Making amazing Pizzas on the Go!!</h2>
-        
+  <div id="header" class="container-fluid text-center">
+    <img class="logo" src="images/bantuu logo.png" width="200px" height="200px">
+    <h1>Bantuu Pizza</h1>
+    <h2>Making amazing Pizzas on the Go!!</h2>
+
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div id="smallPizza">
+        <img src="images/Small pizza.jpg" width="100%" class="image-fluid imagehover">
+        <div class="overlay">
+          CLICK HERE
+        </div>
+      </div>
+      <form action="/action_page.php" id="optionsSmall" class="optionsSmall">
+        <p>Please select your crust of pizza!!</p>
+        <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
+        <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
+        <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>
+
+        <br>
+        <p>Please select the toppings on pizza!! </p>
+        <input type="checkbox" name="toppings" value="30">Beef...100Ksh<br>
+        <input type="checkbox" name="toppings" value="60">Bacon...200Ksh<br>
+        <input type="checkbox" name="toppings" value="100">Pineapple...300Ksh<br>
+        <br>
+        <p>Please input number of Pizzas</p>
+        <input type="number" name="number" min="1" max="10">Number<br>
+
+        <input type="submit" value="Submit">
+      </form>
     </div>
-    <div class="row">
-        <div class="col-4" >
-                <div id="smallPizza">
-                    <img  src="images/Small pizza.jpg" width="100%" class="image-fluid imagehover">
-                <div class="overlay">
-                    CLICK HERE
-                </div>
-            </div>
-            <form action="/action_page.php" id="options">
-                <p>Please select your crust of pizza!!</p>
-                  <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
-                  <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
-                  <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>  
-                
-                <br><p>Please select the toppings on pizza!! </p>
-                  <input type="checkbox" name="toppings" value="30">Beef...Ksh<br>
-                  <input type="checkbox" name="toppings" value="60">Bacon<br>
-                  <input type="checkbox" name="toppings" value="100">Pineapple<br>
-                  <br><p>Please input number of Pizzas</p>
-                  <input type="number" name="number" min="1" max="10">Number<br>
-            
-                  <input type="submit" value="Submit">
-                </form>
+
+    <div class="col-4">
+      <div id="mediumPizza">
+        <img src="images/Medium pizza.jpg" width="100%" class="image-fluid imagehover">
+        <div class="overlay">
+          CLICK HERE
         </div>
-        
-        <div class="col-4" >
-            <div id="mediumPizza">
-                <img  src="images/Medium pizza.jpg" width="100%" class="image-fluid imagehover">
-            <div class="overlay">
-                    CLICK HERE
-                </div>
-                <form action="/action_page.php" id="options">
-                    <p>Please select your crust of pizza!!</p>
-                      <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
-                      <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
-                      <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>  
-                    
-                    <br><p>Please select the toppings on pizza!! </p>
-                      <input type="checkbox" name="toppings" value="30">Beef...Ksh<br>
-                      <input type="checkbox" name="toppings" value="60">Bacon<br>
-                      <input type="checkbox" name="toppings" value="100">Pineapple<br>
-                      <br><p>Please input number of Pizzas</p>
-                      <input type="number" name="number" min="1" max="10">Number<br>      
-                    
-                      <input type="submit" value="Submit">
-                    </form>
-            </div>
-        </div>
-        <div class="col-4">
-            <div id="largePizza">
-                <img  src="images/Large pizza.jpg" width="100%" class="image-fluid imagehover">
-            <div class="overlay">
-                    CLICK HERE
-                </div>
-            </div>
-            <form action="/action_page.php" id="options">
-                <p>Please select your crust of pizza!!</p>
-                  <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
-                  <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
-                  <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>  
-                
-                <br><p>Please select the toppings on pizza!! </p>
-                  <input type="checkbox" name="toppings" value="30">Beef...Ksh<br>
-                  <input type="checkbox" name="toppings" value="60">Bacon<br>
-                  <input type="checkbox" name="toppings" value="100">Pineapple<br>
-                <br><p>Please input number of Pizzas</p>
-                <input type="number" name="number" min="1" max="10">Number<br>  
-                
-                  <input type="submit" value="Submit">
-                </form>
-        </div>
+        <form action="/action_page.php" id="optionsMedium">
+          <p>Please select your crust of pizza!!</p>
+          <input type="radio" name="crust" value="male"> Crispy...Ksh300<br>
+          <input type="radio" name="crust" value="female"> Stuffed...Ksh400<br>
+          <input type="radio" name="crust" value="other"> Gluten free...Ksh500<br>
+
+          <br>
+          <p>Please select the toppings on pizza!! </p>
+          <input type="checkbox" name="toppings" value="30">Beef...150Ksh<br>
+          <input type="checkbox" name="toppings" value="60">Bacon...250Ksh<br>
+          <input type="checkbox" name="toppings" value="100">Pineapple...350Ksh<br>
+          <br>
+          <p>Please input number of Pizzas</p>
+          <input type="number" name="number" min="1" max="10">Number<br>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </div>
-    <div id="footer">
-            <img src="images/social_icons/behance.png" alt="" srcset="">
-            <img src="images/social_icons/dribble.png" alt="" srcset="">
-            <img src="images/social_icons/facebook.png" alt="" srcset="">
-            <img src="images/social_icons/flickr.png" alt="" srcset="">
-            <img src="images/social_icons/g_plus.png" alt="" srcset="">
-            <img src="images/social_icons/pinterest.png" alt="" srcset="">
-            <img src="images/social_icons/skype.png" alt="" srcset="">
-            <img src="images/social_icons/stumble_upon.png" alt="" srcset="">
-            <img src="images/social_icons/twitter.png" alt="" srcset="">
-            <img src="images/social_icons/you_tube.png" alt="" srcset="">
+    <div class="col-4">
+      <div id="largePizza">
+        <img src="images/Large pizza.jpg" width="100%" class="image-fluid imagehover">
+        <div class="overlay">
+          CLICK HERE
         </div>
-        <footer style="text-align: center;" class="footer"><strong>
-                <p>Bantu Pizza</p>
-                <P><em>&copy; 2019 All Rights Reserved</em></P>
-            </strong>
-        </footer>
-    
+      </div>
+      <form action="/action_page.php" id="optionsLarge">
+        <p>Please select your crust of pizza!!</p>
+        <input type="radio" name="crust" value="male"> Crispy...Ksh400<br>
+        <input type="radio" name="crust" value="female"> Stuffed...Ksh500<br>
+        <input type="radio" name="crust" value="other"> Gluten free...Ksh600<br>
+
+        <br>
+        <p>Please select the toppings on pizza!! </p>
+        <input type="checkbox" name="toppings" value="30">Beef...200Ksh<br>
+        <input type="checkbox" name="toppings" value="60">Bacon...300Ksh<br>
+        <input type="checkbox" name="toppings" value="100">Pineapple...400Ksh<br>
+        <br>
+        <p>Please input number of Pizzas</p>
+        <input type="number" name="number" min="1" max="10">Number<br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div id="footer">
+    <img src="images/social_icons/behance.png" alt="" srcset="">
+    <img src="images/social_icons/dribble.png" alt="" srcset="">
+    <img src="images/social_icons/facebook.png" alt="" srcset="">
+    <img src="images/social_icons/flickr.png" alt="" srcset="">
+    <img src="images/social_icons/g_plus.png" alt="" srcset="">
+    <img src="images/social_icons/pinterest.png" alt="" srcset="">
+    <img src="images/social_icons/skype.png" alt="" srcset="">
+    <img src="images/social_icons/stumble_upon.png" alt="" srcset="">
+    <img src="images/social_icons/twitter.png" alt="" srcset="">
+    <img src="images/social_icons/you_tube.png" alt="" srcset="">
+  </div>
+  <footer style="text-align: center;" class="footer"><strong>
+      <p>Bantu Pizza</p>
+      <P><em>&copy; 2019 All Rights Reserved</em></P>
+    </strong>
+  </footer>
+
 </body>
 </html>

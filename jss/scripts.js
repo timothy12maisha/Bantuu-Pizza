@@ -11,3 +11,19 @@ $(document).ready(function(){
         }
     );
 });
+
+$(document).ready(function(){
+    $("#smallPizza").click(function(){
+      $("#optionsSmall").slideToggle();
+    });
+  });
+$(document).ready(function(){
+    $("#mediumPizza").click(function(){
+      $("#optionsMedium").slideToggle();
+    });
+  });
+$(document).ready(function(){
+    $("#largePizza").click(function(){
+      $("#optionsLarge").slideToggle();
+    });
+  });
