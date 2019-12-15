@@ -11,7 +11,6 @@ $(document).ready(function(){
         }
     );
 });
-
 $(document).ready(function(){
     $("#smallPizza").click(function(){
       $("#optionsSmall").slideToggle();

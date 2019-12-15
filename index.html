@@ -16,6 +16,30 @@
 </head>
 
 <body>
+  <script>
+    // function validateform() {
+
+    //   var crispyInput = document.forms["myForm"]["crispy"].value;
+
+    //   var stuffedInput = document.forms["myForm"]["stuffed"].value;
+
+    //   var glutenInput = document.forms["myForm"]["gluten"].value;
+
+    //   var beefInput = document.forms["myForm"]["beef"].value;
+
+    //   var baconInput = document.forms["myForm"]["bacon"].value;
+
+    //   var pineappleInput = document.forms["myForm"]["pineapple"].value;
+
+    //   var PizzaInput = document.forms["myForm"]["number"].value;
+
+
+    //   if (crispyInput == "") {
+    //     alert("please select a crust option!");
+    //     return;
+    //   };
+    // }
+  </script>
   <div id="header" class="container-fluid text-center">
     <img class="logo" src="images/bantuu logo.png" width="200px" height="200px">
     <h1>Bantuu Pizza</h1>
@@ -30,17 +54,16 @@
           CLICK HERE
         </div>
       </div>
-      <form action="/action_page.php" id="optionsSmall" class="optionsSmall">
+      <form id="optionsSmall" class="optionsSmall" name="myForm" onsubmit="return validateForm()">
         <p>Please select your crust of pizza!!</p>
-        <input type="radio" name="crust" value="male"> Crispy...Ksh200<br>
-        <input type="radio" name="crust" value="female"> Stuffed...Ksh300<br>
-        <input type="radio" name="crust" value="other"> Gluten free...Ksh400<br>
-
+        <input type="radio" name="crispy" value="200"> Crispy...Ksh200<br>
+        <input type="radio" name="stuffed" value="300"> Stuffed...Ksh300<br>
+        <input type="radio" name="gluten" value="400"> Gluten free...Ksh400<br>
         <br>
         <p>Please select the toppings on pizza!! </p>
-        <input type="checkbox" name="toppings" value="30">Beef...100Ksh<br>
-        <input type="checkbox" name="toppings" value="60">Bacon...200Ksh<br>
-        <input type="checkbox" name="toppings" value="100">Pineapple...300Ksh<br>
+        <input type="checkbox" name="beef" value="100">Beef...100Ksh<br>
+        <input type="checkbox" name="bacon" value="200">Bacon...200Ksh<br>
+        <input type="checkbox" name="pineapple" value="100">Pineapple...300Ksh<br>
         <br>
         <p>Please input number of Pizzas</p>
         <input type="number" name="number" min="1" max="10">Number<br>
@@ -48,24 +71,23 @@
         <input type="submit" value="Submit">
       </form>
     </div>
-
     <div class="col-4">
       <div id="mediumPizza">
         <img src="images/Medium pizza.jpg" width="100%" class="image-fluid imagehover">
         <div class="overlay">
           CLICK HERE
         </div>
-        <form action="/action_page.php" id="optionsMedium">
+        <form id="optionsMedium" name="myForm" onsubmit="return validateForm()">
           <p>Please select your crust of pizza!!</p>
-          <input type="radio" name="crust" value="male"> Crispy...Ksh300<br>
-          <input type="radio" name="crust" value="female"> Stuffed...Ksh400<br>
-          <input type="radio" name="crust" value="other"> Gluten free...Ksh500<br>
+          <input type="radio" name="crust" value="300"> Crispy...Ksh300<br>
+          <input type="radio" name="crust" value="400"> Stuffed...Ksh400<br>
+          <input type="radio" name="crust" value="500"> Gluten free...Ksh500<br>
 
           <br>
           <p>Please select the toppings on pizza!! </p>
-          <input type="checkbox" name="toppings" value="30">Beef...150Ksh<br>
-          <input type="checkbox" name="toppings" value="60">Bacon...250Ksh<br>
-          <input type="checkbox" name="toppings" value="100">Pineapple...350Ksh<br>
+          <input type="checkbox" name="toppings" value="150">Beef...150Ksh<br>
+          <input type="checkbox" name="toppings" value="250">Bacon...250Ksh<br>
+          <input type="checkbox" name="toppings" value="350">Pineapple...350Ksh<br>
           <br>
           <p>Please input number of Pizzas</p>
           <input type="number" name="number" min="1" max="10">Number<br>
@@ -81,21 +103,19 @@
           CLICK HERE
         </div>
       </div>
-      <form action="/action_page.php" id="optionsLarge">
+      <form name="myForm" onsubmit="return validateForm()" id="optionsLarge">
         <p>Please select your crust of pizza!!</p>
-        <input type="radio" name="crust" value="male"> Crispy...Ksh400<br>
-        <input type="radio" name="crust" value="female"> Stuffed...Ksh500<br>
-        <input type="radio" name="crust" value="other"> Gluten free...Ksh600<br>
-
+        <input type="radio" name="crust" value="400"> Crispy...Ksh400<br>
+        <input type="radio" name="crust" value="500"> Stuffed...Ksh500<br>
+        <input type="radio" name="crust" value="600"> Gluten free...Ksh600<br>
         <br>
         <p>Please select the toppings on pizza!! </p>
-        <input type="checkbox" name="toppings" value="30">Beef...200Ksh<br>
-        <input type="checkbox" name="toppings" value="60">Bacon...300Ksh<br>
-        <input type="checkbox" name="toppings" value="100">Pineapple...400Ksh<br>
+        <input type="checkbox" name="toppings" value="200">Beef...200Ksh<br>
+        <input type="checkbox" name="toppings" value="300">Bacon...300Ksh<br>
+        <input type="checkbox" name="toppings" value="400">Pineapple...400Ksh<br>
         <br>
         <p>Please input number of Pizzas</p>
         <input type="number" name="number" min="1" max="10">Number<br>
-
         <input type="submit" value="Submit">
       </form>
     </div>
@@ -119,4 +139,5 @@
   </footer>
 
 </body>
+
 </html>
