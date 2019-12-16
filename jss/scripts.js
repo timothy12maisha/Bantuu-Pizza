@@ -40,3 +40,29 @@ $(document).ready(function(){
             });
     };
 });
+$(document).ready(function(){
+  window.validateForm = function(){
+    var crust1 = parseInt($("input[name='crust1']:checked").val()); 
+    var toppings1 = parseInt($("input[name='toppings1']:checked").val());
+    alert(crust1);
+          if(toppings1){
+            alert(toppings1);
+          }
+          $(document).submit(function(){ event.preventDefault()
+            $(".total1").text(crust1+toppings1)
+          });
+  };
+});
+$(document).ready(function(){
+  window.validateForm = function(){
+    var crust2 = parseInt($("input[name='crust2']:checked").val()); 
+    var toppings2 = parseInt($("input[name='toppings2']:checked").val());
+    alert(crust2);
+          if(toppings2){
+            alert(toppings2);
+          }
+          $(document).submit(function(){ event.preventDefault()
+            $(".total2").text(crust2+toppings2)
+          });
+  };
+});
