@@ -33,7 +33,7 @@ $(document).ready(function(){
       var toppings = $("input[type='checkbox']").is(':checked');
       alert(crust);
             if(toppings){
-                alert("Your are a - " + toppings);
+                alert(toppings);
             }
     };
 });
