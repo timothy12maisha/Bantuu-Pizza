@@ -27,13 +27,16 @@ $(document).ready(function(){
     });
   });
 
-  $(document).ready(function() {
+  $(document).ready(function(){
     window.validateForm = function(){
-      var crust = $("input[name='crust']:checked").val();
-      var toppings = $("input[type='checkbox']").is(':checked');
+      var crust = parseInt($("input[name='crust']:checked").val()); 
+      var toppings = parseInt($("input[name='toppings']:checked").val());
       alert(crust);
             if(toppings){
-                alert(toppings);
+              alert(toppings);
             }
+            $(document).submit(function(){ event.preventDefault()
+              $(".total").text(crust+toppings)
+            });
     };
 });
