@@ -9,19 +9,17 @@
 This is the Bantuu Pizza website for the company that does makes pizzas for sale .
 
 ## Behaviour Driven Development
-1.Landing Page
+1.Header
 
-Mouse-Icon: "Smooth Scrolls to the next page. Mouse icon has a bouncing effect." What We Do Section
+Has the logo for the website and also name.
 
-Icons: "Click on the icons to display their descriptions." Descriptions: "Click on the descriptions again to hide them and to display the icons."
+2.The Selection section
 
-2.Portfolio Section
-
-Images: "Hover on each image to display their respective descriptions."
+Images: "Hover on each image to display their respective descriptions." and has a click to dropdown to choice options.
 
 3.Contact Us Section
 
-INPUT: "Fill all forms and Submit" OUTPUT: "Thanks for being our client,your message has been received"
+Has links to social media pages.
 
 ## Setup/Installation Requirements
 
