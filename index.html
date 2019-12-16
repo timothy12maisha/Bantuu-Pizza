@@ -20,6 +20,11 @@
     var crispyPrice=200
     var stuffedPrice=300
     var glutenPrice=400
+    // alert(crispyPrice)
+
+    function myFunction() {
+  var crispyPrice = document.getElementById("crispy").value;
+}
 
 
   </script>
@@ -39,9 +44,9 @@
       </div>
       <form id="optionsSmall" class="optionsSmall" name="myForm" onsubmit="return validateForm()">
         <p>Please select your crust of pizza!!</p>
-        <input type="radio" name="crust" value="200"> Crispy...Ksh200<br>
-        <input type="radio" name="crust" value="300"> Stuffed...Ksh300<br>
-        <input type="radio" name="crust" value="400"> Gluten free...Ksh400<br>
+        <input type="radio" name="crust" id="crispy" value="200"> Crispy...Ksh200<br>
+        <input type="radio" name="crust" id="stuffed" value="300"> Stuffed...Ksh300<br>
+        <input type="radio" name="crust" id="glutenfree" value="400"> Gluten free...Ksh400<br>
         <br>
         <p>Please select the toppings on pizza!! </p>
         <input type="checkbox" name="beef" value="100">Beef...100Ksh<br>

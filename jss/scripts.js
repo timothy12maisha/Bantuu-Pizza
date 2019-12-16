@@ -26,3 +26,14 @@ $(document).ready(function(){
       $("#optionsLarge").slideToggle();
     });
   });
+
+  $(document).ready(function() {
+    window.validateForm = function(){
+      var crust = $("input[name='crust']:checked").val();
+      var toppings = $("input[type='checkbox']").is(':checked');
+      alert(crust);
+            if(toppings){
+                alert("Your are a - " + toppings);
+            }
+    };
+});
