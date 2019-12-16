@@ -31,12 +31,13 @@ $(document).ready(function(){
     window.validateForm = function(){
       var crust = parseInt($("input[name='crust']:checked").val()); 
       var toppings = parseInt($("input[name='toppings']:checked").val()) ;
-      alert(crust);
-            if(toppings){
-              alert(toppings);
-            }
+      var number = parseInt($("#number").val());
+      // alert(crust);
+      //       if(toppings){
+      //         alert(toppings);
+      //       }
             $(document).submit(function(){ event.preventDefault()
-              $(".total").text(crust+toppings)
-            });
-    };
+              $(".total").text((crust+toppings) * number+"ksh")      
+    });        
+    }; 
 });
