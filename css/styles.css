@@ -39,7 +39,7 @@ h2 {
 }
 #footer{
     align-items: center;
-    padding-left: 250px;
+    /* padding-left: 100px; */
     margin: 15px;
 }
 .imagehover:hover{
