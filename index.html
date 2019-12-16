@@ -17,28 +17,11 @@
 
 <body>
   <script>
-    // function validateform() {
-
-    //   var crispyInput = document.forms["myForm"]["crispy"].value;
-
-    //   var stuffedInput = document.forms["myForm"]["stuffed"].value;
-
-    //   var glutenInput = document.forms["myForm"]["gluten"].value;
-
-    //   var beefInput = document.forms["myForm"]["beef"].value;
-
-    //   var baconInput = document.forms["myForm"]["bacon"].value;
-
-    //   var pineappleInput = document.forms["myForm"]["pineapple"].value;
-
-    //   var PizzaInput = document.forms["myForm"]["number"].value;
+    var crispyPrice=200
+    var stuffedPrice=300
+    var glutenPrice=400
 
 
-    //   if (crispyInput == "") {
-    //     alert("please select a crust option!");
-    //     return;
-    //   };
-    // }
   </script>
   <div id="header" class="container-fluid text-center">
     <img class="logo" src="images/bantuu logo.png" width="200px" height="200px">
@@ -56,9 +39,9 @@
       </div>
       <form id="optionsSmall" class="optionsSmall" name="myForm" onsubmit="return validateForm()">
         <p>Please select your crust of pizza!!</p>
-        <input type="radio" name="crispy" value="200"> Crispy...Ksh200<br>
-        <input type="radio" name="stuffed" value="300"> Stuffed...Ksh300<br>
-        <input type="radio" name="gluten" value="400"> Gluten free...Ksh400<br>
+        <input type="radio" name="crust" value="200"> Crispy...Ksh200<br>
+        <input type="radio" name="crust" value="300"> Stuffed...Ksh300<br>
+        <input type="radio" name="crust" value="400"> Gluten free...Ksh400<br>
         <br>
         <p>Please select the toppings on pizza!! </p>
         <input type="checkbox" name="beef" value="100">Beef...100Ksh<br>
