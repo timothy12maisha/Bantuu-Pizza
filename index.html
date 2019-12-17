@@ -35,11 +35,11 @@
           CLICK HERE
         </div>
       </div>
-      <form id="optionsSmall" class="optionsSmall" name="myForm" onsubmit="return validateForm()">
+      <form id="optionsSmall" class="optionsSmall" name="myForm" onsubmit="validateForm()">
         <p>Please select your crust of pizza!!</p>
-        <input type="radio" name="crust" id="crispy" value="200"> Crispy..Ksh200<br>
-        <input type="radio" name="crust" id="stuffed" value="300"> Stuffed..Ksh300<br>
-        <input type="radio" name="crust" id="glutenfree" value="400"> Gluten free..Ksh400<br>
+        <input type="radio" name="crust" value="200"> Crispy..Ksh200<br>
+        <input type="radio" name="crust" value="300"> Stuffed..Ksh300<br>
+        <input type="radio" name="crust" value="400"> Gluten free..Ksh400<br>
         <br>
         <p>Please select the toppings on pizza!! </p>
         <input type="radio" name="toppings" value="100">Beef..100Ksh<br>
@@ -47,11 +47,11 @@
         <input type="radio" name="toppings" value="300">Pineapple..300Ksh<br>
         <br>
         <p>Please input number of Pizzas</p>
-        <input type="number" id="number" min="1" max="10">Number<br>
+        <input type="number" class="number" min="1" max="10">Number<br>
 
-        <input type="submit" value="submit">
+        <input type="submit" value="checkout">
       </form>
-      
+
     </div>
     <div class="col-4">
       <div id="mediumPizza">
@@ -60,7 +60,7 @@
           CLICK HERE
         </div>
       </div>
-      <form id="optionsMedium" name="myForm" onsubmit="return validateForm()">
+      <form id="optionsMedium" name="myForm" onsubmit="validateForm2()">
         <p>Please select your crust of pizza!!</p>
         <input type="radio" name="crust" value="300"> Crispy..Ksh300<br>
         <input type="radio" name="crust" value="400"> Stuffed..Ksh400<br>
@@ -75,7 +75,7 @@
         <p>Please input number of Pizzas</p>
         <input type="number" id="number" min="1" max="10">Number<br>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="checkout">
       </form>
     </div>
     <div class="col-4">
@@ -85,7 +85,7 @@
           CLICK HERE
         </div>
       </div>
-      <form name="myForm" onsubmit="return validateForm()" id="optionsLarge">
+      <form name="myForm" onsubmit="return validateForm3()" id="optionsLarge">
         <p>Please select your crust of pizza!!</p>
         <input type="radio" name="crust" value="400"> Crispy..Ksh400<br>
         <input type="radio" name="crust" value="500"> Stuffed..Ksh500<br>
@@ -97,15 +97,16 @@
         <input type="radio" name="toppings" value="400">Pineapple..400Ksh<br>
         <br>
         <p>Please input number of Pizzas</p>
-        <input type="number" id="number" min="1" max="10">Number<br>
-        <input type="submit" value="Submit">
+        <input type="number" id="number3" min="1" max="10">Number<br>
+
+        <input type="submit" value="checkout">
       </form>
     </div>
   </div>
-  <div id="total" >
-      <h4> TOTAL Ksh</h4>
-      <div class="total"> </div>
-    </div>
+  <div id="total">
+    <h4> TOTAL Ksh</h4>
+    <div class="total"> </div>
+  </div>
   <div class="row" id="footer">
     <img src="images/social_icons/behance.png" alt="" srcset="">
     <img src="images/social_icons/dribble.png" alt="" srcset="">

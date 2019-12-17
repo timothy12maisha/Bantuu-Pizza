@@ -31,13 +31,45 @@ $(document).ready(function(){
     window.validateForm = function(){
       var crust = parseInt($("input[name='crust']:checked").val()); 
       var toppings = parseInt($("input[name='toppings']:checked").val()) ;
-      var number = parseInt($("#number").val());
-      // alert(crust);
-      //       if(toppings){
-      //         alert(toppings);
-      //       }
+      var number = $(".number").val();
+      alert(number);
+      alert(crust);
+            if(toppings){
+              alert(toppings);
+            }
             $(document).submit(function(){ event.preventDefault()
-              $(".total").text((crust+toppings) * number+"ksh")      
-    });        
-    }; 
+              $(".total").text((crust+toppings) * number)
+       });
+    };
+
+    window.validateForm2 = function(){
+      var crust = parseInt($("input[name='crust']:checked").val()); 
+      var toppings = parseInt($("input[name='toppings']:checked").val()) ;
+      var number = $("#number").val();
+      alert(number);
+      alert(crust);
+            if(toppings){
+              alert(toppings);
+            }
+            $(document).submit(function(){ event.preventDefault()
+              $(".total").text((crust+toppings) * number)
+       });
+    };
+    
+    window.validateForm3 = function(){
+      var crust = parseInt($("input[name='crust']:checked").val()); 
+      var toppings = parseInt($("input[name='toppings']:checked").val()) ;
+      var number = $("#number3").val();
+      alert(number);
+      alert(crust);
+            if(toppings){
+              alert(toppings);
+            }
+            $(document).submit(function(){ event.preventDefault()
+              $(".total").text((crust+toppings) * number)
+       });
+    };
+
 });
+
+ 
