@@ -10,9 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <title>BANTUU PIZZA</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="./jss/scripts.js"></script>
+  
 </head>
 
 <body>
@@ -37,14 +35,15 @@
       </div>
       <form id="optionsSmall" class="optionsSmall" name="myForm" onsubmit="validateForm()">
         <p>Please select your crust of pizza!!</p>
-        <input type="radio" name="crust" value="200" id="Crispy"> Crispy..Ksh200<br>
-        <input type="radio" name="crust" value="300" id="Stuffed"> Stuffed..Ksh300<br>
-        <input type="radio" name="crust" value="400" id="Gluten-Free"> Gluten free..Ksh400<br>
+        
+        <input type="radio" name="crust" value="200" id="Crispy"><label id="Crispy1" for="Crispy">crispy..Ksh200</label><br>
+        <input type="radio" name="crust" value="300" id="Stuffed"><label id="Stuffed1" for="Stuffed">stuffed..Ksh300</label><br>
+        <input type="radio" name="crust" value="400" id="Gluten-Free"><label id="Gluten-Free1" for="Gluten-free">Gluten-free..Ksh400</label><br>
         <br>
         <p>Please select the toppings on pizza!! </p>
-        <input type="radio" name="toppings" id="Beef"  value="100">Beef..100Ksh<br>
-        <input type="radio" name="toppings" id="Bacon"  value="200">Bacon..200Ksh<br>
-        <input type="radio" name="toppings" id="Pineapple"  value="300">Pineapple..300Ksh<br>
+        <input type="radio" name="toppings" id="Beef"  value="100"><label id="Bantuu1" for="Beef">Beef..100Ksh</label><br>
+        <input type="radio" name="toppings" id="Bacon"  value="200"><label id="Bacon1" for="Bacon">Bacon..200Ksh</label><br>
+        <input type="radio" name="toppings" id="Pineapple"  value="300"><label id="Pineapple1" for="Pineapple">Pineapple..300Ksh</label><br>
         <br>
         <p>Please input number of Pizzas</p>
         <input type="number" class="number" min="1" max="10">Number<br>
@@ -105,12 +104,7 @@
   </div>
   <div id="total">
     <h4> TOTAL Ksh</h4>
-    <!-- <label id="myLabel" for="Crispy">Male</label>
-    <label id="myLabel" for="Stuffed">Male</label>
-    <label id="myLabel" for="Gluten-free">Male</label>
-    <label id="myLabel" for="Gluten-free">Male</label>
-    <label id="myLabel" for="Gluten-free">Male</label>
-    <label id="myLabel" for="Gluten-free">Male</label> -->
+    <ul id="cartItems"></ul>
     <div class="total"> </div>
   </div>
   <div class="row" id="footer">
@@ -132,5 +126,8 @@
   </footer>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./jss/scripts.js"></script>
 
 </html>
