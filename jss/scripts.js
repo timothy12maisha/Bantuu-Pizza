@@ -29,14 +29,15 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     window.validateForm = function(){
-      var crust = parseInt($("input[name='crust']:checked").val()); 
+      var crust = parseInt($("input[name='crust']:checked").val());
       var toppings = parseInt($("input[name='toppings']:checked").val()) ;
       var number = $(".number").val();
-      alert(number);
-      alert(crust);
-            if(toppings){
-              alert(toppings);
-            }
+      // alert(crustName)
+      // alert(number);
+      // alert(crust);
+            // if(toppings){
+            //   alert(toppings);
+            // }
             $(document).submit(function(){ event.preventDefault()
               $(".total").text((crust+toppings) * number)
        });
@@ -46,11 +47,11 @@ $(document).ready(function(){
       var crust = parseInt($("input[name='crust']:checked").val()); 
       var toppings = parseInt($("input[name='toppings']:checked").val()) ;
       var number = $("#number").val();
-      alert(number);
-      alert(crust);
-            if(toppings){
-              alert(toppings);
-            }
+      // alert(number);
+      // alert(crust);
+      //       if(toppings){
+      //         alert(toppings);
+      //       }
             $(document).submit(function(){ event.preventDefault()
               $(".total").text((crust+toppings) * number)
        });
@@ -60,11 +61,11 @@ $(document).ready(function(){
       var crust = parseInt($("input[name='crust']:checked").val()); 
       var toppings = parseInt($("input[name='toppings']:checked").val()) ;
       var number = $("#number3").val();
-      alert(number);
-      alert(crust);
-            if(toppings){
-              alert(toppings);
-            }
+      // alert(number);
+      // alert(crust);
+      //       if(toppings){
+      //         alert(toppings);
+      //       }
             $(document).submit(function(){ event.preventDefault()
               $(".total").text((crust+toppings) * number)
        });
